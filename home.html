@@ -1,0 +1,32 @@
+<div class="game_area" id="game-area">
+    <h1 id="win">THANK YOU FOR CRUSHING ALL THE TEEMOS?????</h1>
+</div>
+<div class="stats_container">
+    <div class="games-played">
+        <div class="label">Games Played</div>
+        <div class="value"></div>
+    </div>
+    <div class="attempts">
+        <div class="label">Attempts</div>
+        <div class="value"></div>
+    </div>
+    <div class="accuracy">
+        <div class="label">Accuracy</div>
+        <div class="value"></div>
+    </div>
+    <button name="reset" class="reset">Reset</button>
+</div>
+
+<script>
+    $(document).ready(function() {
+        $('body').css('background-image', 'url("images/teemo_wallpaper_by_tll_mathex-d6oe34r.jpg")');
+        new_game();
+        reset_stats();
+        games_played = 0;
+        total_possible_matches = $('.card').length / 2;
+        $('#game-area').on('click', ".card", card_clicked);
+        $('.stats_container').on('click', ".reset", reset);
+        first_card_clicked = null;
+        second_card_clicked = null;
+    });
+</script>

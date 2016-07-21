@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app="matchApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Teemo Never Dies</title>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-route.js"></script>
+    <script src="script.js"></script>
+
+</head>
+<body>
+    <header class="game-header">
+        <img src="images/Animation_teeto.gif" class="logo"/>
+        <h1>Crush the Teemos</h1>
+        <nav class="nav-bar">
+            <ul>
+                <li class="home_link"><a href="#home">Play</a></li>
+                <li class="settings_link"><a href="#settings">Settings</a></li>
+                <li class="about_link"><a href="#about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div ng-view></div>
+</body>
+</html>
